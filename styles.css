@@ -65,6 +65,10 @@ a:active {
     color: red
 }
 
+.clickable-image:hover {
+    opacity: 0.88;
+}
+
 h1 {
     font-size: 1.66em
 }
