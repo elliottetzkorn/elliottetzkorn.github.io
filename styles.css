@@ -21,17 +21,12 @@
     margin: 0
 }
 
-html {
-    overflow-y: scroll
+.spacer-sm {
+    height: .5rem
 }
 
-body {
-    background-color: white;
-    max-width: 816px;
-    margin: 1.5rem auto 5rem;
-    box-sizing: border-box;
-    padding: 2rem;
-    line-height: 1.5rem;
+.spacer-md {
+    height: 1rem
 }
 
 body,
@@ -42,6 +37,15 @@ img {
 img {
     object-fit: cover;
     object-position: center;
+}
+
+body {
+    background-color: white;
+    max-width: 816px;
+    margin: 1.5rem auto 5rem;
+    box-sizing: border-box;
+    padding: 2rem;
+    line-height: 1.5rem;
 }
 
 small {
@@ -62,12 +66,20 @@ a:active {
     color: red
 }
 
+.clickable-image:hover {
+    opacity: 0.88;
+}
+
 h1 {
     font-size: 1.66em
 }
 
 h2 {
     font-size: 1.22em
+}
+
+html {
+    overflow-y: scroll
 }
 
 li {
@@ -77,18 +89,6 @@ li {
 
 ul {
     padding-left: 1.5rem
-}
-
-.spacer-sm {
-    height: .5rem
-}
-
-.spacer-md {
-    height: 1rem
-}
-
-.clickable-image:hover {
-    opacity: 0.92;
 }
 
 .container {
@@ -104,6 +104,10 @@ ul {
 }
 
 @media (max-width:816px) {
+    #imageGrid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
     body {
         padding: 1rem 1rem 2rem;
         margin: 0;
@@ -113,9 +117,5 @@ ul {
 
     .container {
         grid-template-columns: 1fr
-    }
-
-    #imageGrid {
-        grid-template-columns: repeat(2, 1fr)
     }
 }

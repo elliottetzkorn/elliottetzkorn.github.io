@@ -1,0 +1,30 @@
+a,
+a:visited {
+    color: forestgreen
+}
+
+body {
+    border: 1px solid forestgreen
+}
+
+.album-art,
+.audio-player {
+    width: 100%
+}
+
+.track {
+    color: dimgray;
+    font-weight: 300;
+}
+
+.track:hover {
+    color: black;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.currently-playing {
+    color: black;
+    text-decoration: underline;
+    font-weight: 400;
+}
