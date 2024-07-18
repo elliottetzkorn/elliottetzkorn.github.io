@@ -20,11 +20,11 @@ body {
 .track:hover {
     color: black;
     cursor: pointer;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .currently-playing {
     color: black;
     text-decoration: underline;
-    font-weight: normal;
+    font-weight: 400;
 }
